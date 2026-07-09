@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: obgov.github.io
+Sitemap: https://obgov.github.io/sitemap.xml
