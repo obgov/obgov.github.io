@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ATS-safe resume: Богдан Топоров — Senior Backend PHP Developer / Tech Lead">
+  <title>ATS Resume — Богдан Топоров</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #111827; background: #fff; font: 16px/1.55 Arial, Helvetica, sans-serif; }
+    main { max-width: 920px; margin: 0 auto; padding: 42px 24px 64px; }
+    h1 { margin: 0 0 6px; font-size: 34px; line-height: 1.1; }
+    h2 { margin: 28px 0 10px; padding-bottom: 5px; border-bottom: 1px solid #d1d5db; font-size: 20px; }
+    h3 { margin: 18px 0 4px; font-size: 18px; }
+    p { margin: 0 0 8px; }
+    ul { margin: 8px 0 0; padding-left: 22px; }
+    li + li { margin-top: 4px; }
+    a { color: #075985; }
+    .meta, .role, .period, .stack { color: #374151; }
+    .top { margin-bottom: 24px; }
+    .download { margin: 18px 0 0; display: flex; gap: 10px; flex-wrap: wrap; }
+    .download a, .download button { border: 1px solid #d1d5db; background: #f9fafb; border-radius: 8px; padding: 8px 12px; color: #111827; text-decoration: none; font: inherit; cursor: pointer; }
+    @media print { .download { display: none; } main { padding: 0; max-width: none; } a { color: #111827; text-decoration: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="top">
+      <h1>Богдан Топоров</h1>
+      <p class="role"><strong>Senior Backend PHP Developer / Tech Lead</strong></p>
+      <p class="meta">Санкт-Петербург · Remote · Full-time · English B2</p>
+      <p>Email: <a href="mailto:toporovbo@gmail.com">toporovbo@gmail.com</a> · Telegram: <a href="https://t.me/iambogdan">@iambogdan</a> · Phone: <a href="tel:+79215886202">+7 (921) 588-62-02</a></p>
+      <div class="download">
+        <a href="assets/docs/toporov-bogdan-cv.pdf" download>Download PDF</a>
+        <a href="resume.txt" download>Download TXT</a>
+        <button type="button" onclick="window.print()">Print / Save as PDF</button>
+        <a href="index.html">Back to website</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>Senior PHP Backend Developer / Tech Lead with 5 years of commercial experience in backend development, highload services and API-heavy products.</p>
+      <p>Core focus: backend architecture, asynchronous processing, database optimization, production reliability, observability and technical leadership.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p><strong>Languages and frameworks:</strong> PHP, Laravel, Symfony, Go, REST API, WebSocket.</p>
+      <p><strong>Databases and search:</strong> MySQL, PostgreSQL, ClickHouse, MongoDB, Elasticsearch, SQL optimization.</p>
+      <p><strong>Messaging and cache:</strong> RabbitMQ, Kafka, Redis, queues, asynchronous processing.</p>
+      <p><strong>Infrastructure and quality:</strong> Docker, Kubernetes, Linux, Nginx, CI/CD, PHPUnit, Prometheus, Grafana.</p>
+      <p><strong>Architecture and leadership:</strong> DDD, SOLID, Clean Code, DTO, TDD, static analysis, code review, teamleading, mentoring.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <article>
+        <h3>MPSTATS — Senior Backend Developer / Tech Lead</h3>
+        <p class="period">February 2025 — June 2026</p>
+        <ul>
+          <li>Senior backend developer for Wildberries and Ozon repricing modules managing product prices with a financial scope of over 2 billion RUB.</li>
+          <li>Tech lead for the Wildberries autoresponder backend direction.</li>
+          <li>Designed and led the rewrite of critical repricing processing from synchronous flow to asynchronous queue-based architecture.</li>
+          <li>Reduced support requests and bugs by 70–80%, improved calculation stability and increased scalability under high load.</li>
+          <li>Increased peak processing throughput from 500 to 30,000 jobs/sec through horizontal worker scaling and queue optimization.</li>
+          <li>Improved observability by introducing Prometheus metrics and Grafana dashboards for queues, latency, throughput, errors and critical business scenarios.</li>
+          <li>Led architecture decisions, code standards, DTO adoption, TDD, static analysis, code review, task decomposition and release quality control.</li>
+        </ul>
+        <p class="stack">Stack: PHP, Laravel, Symfony, RabbitMQ, Kafka, Redis, WebSocket, MySQL, ClickHouse, MongoDB, Prometheus, Grafana.</p>
+      </article>
+
+      <article>
+        <h3>ГК Fix — Middle PHP Developer</h3>
+        <p class="period">February 2024 — February 2025</p>
+        <ul>
+          <li>Developed backend and API for web applications, mobile applications, Telegram bot and Laravel Nova admin panel.</li>
+          <li>Worked with microservices, queues, code architecture and integrations.</li>
+          <li>Developed backend and API for the AliExpress motivation program using PHP and Go.</li>
+          <li>Moved heavy order exports to asynchronous queue processing, enabling export of millions of records in minutes.</li>
+        </ul>
+        <p class="stack">Stack: PHP, Go, Vue.js, Laravel, RabbitMQ, Redis, MySQL, ClickHouse.</p>
+      </article>
+
+      <article>
+        <h3>The Way Media — Middle PHP Developer</h3>
+        <p class="period">April 2023 — February 2024</p>
+        <ul>
+          <li>Lead backend developer in an international startup during product launch in the Mexican market.</li>
+          <li>Implemented API integrations, backend business logic and marketing communication processing.</li>
+          <li>Optimized SQL queries and campaign processing, increasing SMS/email campaign speed by 40%.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>UTV Holding — Middle PHP Developer</h3>
+        <p class="period">February 2021 — October 2022</p>
+        <ul>
+          <li>Developed and maintained backend for entertainment media projects: muz-tv.ru, sun-tv.ru and muztube.ru.</li>
+          <li>Owned API, admin panels, integrations, media content workflows and production support.</li>
+          <li>Main backend developer for Sun-TV: maintained architecture, implemented new sections and fixed production incidents.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>Higher education, 2020.</p>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <p>Russian — native. English — B2.</p>
+    </section>
+  </main>
+</body>
+</html>

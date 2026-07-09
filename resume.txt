@@ -1,0 +1,57 @@
+Богдан Топоров
+Senior Backend PHP Developer / Tech Lead
+Санкт-Петербург · Remote · Full-time · English B2
+Email: toporovbo@gmail.com
+Telegram: @iambogdan
+Phone: +7 (921) 588-62-02
+GitHub: https://github.com/obgov
+
+SUMMARY
+Senior PHP Backend Developer / Tech Lead with 5 years of commercial experience in backend development, highload services and API-heavy products.
+Core focus: backend architecture, asynchronous processing, database optimization, production reliability, observability and technical leadership.
+
+SKILLS
+Languages and frameworks: PHP, Laravel, Symfony, Go, REST API, WebSocket.
+Databases and search: MySQL, PostgreSQL, ClickHouse, MongoDB, Elasticsearch, SQL optimization.
+Messaging and cache: RabbitMQ, Kafka, Redis, queues, asynchronous processing.
+Infrastructure and quality: Docker, Kubernetes, Linux, Nginx, CI/CD, PHPUnit, Prometheus, Grafana.
+Architecture and leadership: DDD, SOLID, Clean Code, DTO, TDD, static analysis, code review, teamleading, mentoring.
+
+EXPERIENCE
+MPSTATS — Senior Backend Developer / Tech Lead
+February 2025 — June 2026
+- Senior backend developer for Wildberries and Ozon repricing modules managing product prices with a financial scope of over 2 billion RUB.
+- Tech lead for the Wildberries autoresponder backend direction.
+- Designed and led the rewrite of critical repricing processing from synchronous flow to asynchronous queue-based architecture.
+- Reduced support requests and bugs by 70–80%, improved calculation stability and increased scalability under high load.
+- Increased peak processing throughput from 500 to 30,000 jobs/sec through horizontal worker scaling and queue optimization.
+- Improved observability by introducing Prometheus metrics and Grafana dashboards for queues, latency, throughput, errors and critical business scenarios.
+- Led architecture decisions, code standards, DTO adoption, TDD, static analysis, code review, task decomposition and release quality control.
+Stack: PHP, Laravel, Symfony, RabbitMQ, Kafka, Redis, WebSocket, MySQL, ClickHouse, MongoDB, Prometheus, Grafana.
+
+ГК Fix — Middle PHP Developer
+February 2024 — February 2025
+- Developed backend and API for web applications, mobile applications, Telegram bot and Laravel Nova admin panel.
+- Worked with microservices, queues, code architecture and integrations.
+- Developed backend and API for the AliExpress motivation program using PHP and Go.
+- Moved heavy order exports to asynchronous queue processing, enabling export of millions of records in minutes.
+Stack: PHP, Go, Vue.js, Laravel, RabbitMQ, Redis, MySQL, ClickHouse.
+
+The Way Media — Middle PHP Developer
+April 2023 — February 2024
+- Lead backend developer in an international startup during product launch in the Mexican market.
+- Implemented API integrations, backend business logic and marketing communication processing.
+- Optimized SQL queries and campaign processing, increasing SMS/email campaign speed by 40%.
+
+UTV Holding — Middle PHP Developer
+February 2021 — October 2022
+- Developed and maintained backend for entertainment media projects: muz-tv.ru, sun-tv.ru and muztube.ru.
+- Owned API, admin panels, integrations, media content workflows and production support.
+- Main backend developer for Sun-TV: maintained architecture, implemented new sections and fixed production incidents.
+
+EDUCATION
+Higher education, 2020.
+
+LANGUAGES
+Russian — native.
+English — B2.

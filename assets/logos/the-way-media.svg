@@ -1,0 +1,8 @@
+<svg width="220" height="72" viewBox="0 0 220 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The Way Media wordmark</title><desc id="desc">Text-based company wordmark for resume page.</desc>
+  <rect width="220" height="72" rx="18" fill="#101827"/>
+  <path d="M22 24h64v6H61v24h-8V30H22v-6Z" fill="#7DD3FC"/>
+  <text x="22" y="50" fill="#E6F6FF" font-family="Arial, sans-serif" font-size="25" font-weight="800">WAY</text>
+  <text x="88" y="50" fill="#A78BFA" font-family="Arial, sans-serif" font-size="25" font-weight="800">MEDIA</text>
+  <path d="M184 21l15 15-15 15" stroke="#7DD3FC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

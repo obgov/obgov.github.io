@@ -1,0 +1,8 @@
+<svg width="220" height="72" viewBox="0 0 220 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">UTV Holding wordmark</title><desc id="desc">Text-based company wordmark for resume page.</desc>
+  <rect width="220" height="72" rx="18" fill="#101827"/>
+  <rect x="20" y="18" width="74" height="36" rx="10" fill="#7DD3FC" fill-opacity=".16" stroke="#7DD3FC"/>
+  <text x="31" y="43" fill="#E6F6FF" font-family="Arial, sans-serif" font-size="24" font-weight="900">UTV</text>
+  <text x="108" y="34" fill="#E6F6FF" font-family="Arial, sans-serif" font-size="18" font-weight="800">HOLDING</text>
+  <text x="108" y="51" fill="#9AA8BD" font-family="Arial, sans-serif" font-size="12" font-weight="700">MEDIA PROJECTS</text>
+</svg>
