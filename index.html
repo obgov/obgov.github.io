@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#08111f">
+  <meta name="theme-color" content="#07111f">
   <meta name="description" content="Богдан Топоров — Senior Backend PHP Developer / Tech Lead. PHP, Laravel, Symfony, highload API, очереди, микросервисы, ClickHouse, Kafka, RabbitMQ, observability.">
   <meta name="keywords" content="Senior Backend PHP Developer, Tech Lead, PHP, Laravel, Symfony, Highload, RabbitMQ, Kafka, Redis, ClickHouse, MySQL, MongoDB, Prometheus, Grafana, Team Lead">
   <meta property="og:title" content="Богдан Топоров — Senior Backend PHP Developer / Tech Lead">
@@ -29,6 +29,7 @@
   </script>
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
   <div class="progress" aria-hidden="true"><span></span></div>
 
@@ -88,22 +89,22 @@
       <article class="stat-card magnetic" data-reveal>
         <span class="stat-label">Peak throughput</span>
         <strong><span class="counter" data-target="30000">0</span><small> jobs/sec</small></strong>
-        <p>Масштабирование воркеров и оптимизация очередей в repricing-системах.</p>
+        <p>Рост пропускной способности обработки задач после перехода на асинхронную обработку, масштабирования воркеров и оптимизации очередей.</p>
       </article>
       <article class="stat-card magnetic" data-reveal>
         <span class="stat-label">Support / bugs</span>
         <strong><span class="counter" data-target="80">0</span><small>%↓</small></strong>
-        <p>Снижение количества обращений и багов после перевода обработки в async.</p>
+        <p>Снижение количества обращений и багов после переработки repricing-модулей Wildberries и Ozon.</p>
       </article>
       <article class="stat-card magnetic" data-reveal>
         <span class="stat-label">Business domain</span>
         <strong><span class="counter" data-target="2">0</span><small> млрд ₽+</small></strong>
-        <p>Модуль управления ценами Wildberries и Ozon в MPSTATS.</p>
+        <p>Суммарная стоимость товаров под управлением в модуле репрайсинга Wildberries и Ozon.</p>
       </article>
       <article class="stat-card magnetic" data-reveal>
         <span class="stat-label">Production support</span>
         <strong><span class="counter" data-target="90">0</span><small>%↓</small></strong>
-        <p>Снижение обращений пользователей по модулю автоответов Wildberries.</p>
+        <p>Снижение обращений пользователей после рефакторинга backend-кода модуля автоответов Wildberries.</p>
       </article>
     </section>
 
@@ -113,7 +114,7 @@
         <h2>Backend-лид, который закрывает не только код, но и устойчивость production-системы.</h2>
       </div>
       <div class="positioning-list">
-        <p>Фокус: архитектура backend-сервисов, отказоустойчивые очереди, высоконагруженные API, SQL/NoSQL оптимизация, качество релизов и прозрачная наблюдаемость.</p>
+        <p>Фокус: архитектура backend-сервисов, отказоустойчивые очереди, highload API, SQL/NoSQL оптимизация, качество релизов и прозрачная наблюдаемость.</p>
         <p>Комфортная зона ответственности: техническое лидерство, декомпозиция, code review, стандарты разработки, критичные production-инциденты и эволюция legacy без остановки продукта.</p>
       </div>
     </section>
@@ -121,13 +122,19 @@
     <section class="logo-strip section-surface" data-reveal aria-label="Компании">
       <div class="section-head compact">
         <p class="eyebrow">Companies</p>
-        <h2>Опыт в продуктовых и media/e-commerce проектах</h2>
+        <h2>Опыт в продуктовых, e-commerce и media-проектах</h2>
       </div>
-      <div class="company-logos">
-        <img src="assets/logos/mpstats.svg" alt="MPSTATS">
-        <img src="assets/logos/gk-fix.svg" alt="ГК Fix">
-        <img src="assets/logos/the-way-media.svg" alt="The Way Media">
-        <img src="assets/logos/utv.svg" alt="UTV Holding">
+      <div class="company-logos marquee" aria-label="Логотипы компаний">
+        <div class="marquee-track">
+          <img src="assets/logos/mpstats.svg" alt="MPSTATS">
+          <img src="assets/logos/gk-fix.svg" alt="ГК Fix">
+          <img src="assets/logos/the-way-media.svg" alt="The Way Media">
+          <img src="assets/logos/utv.svg" alt="UTV Holding">
+          <img src="assets/logos/mpstats.svg" alt="" aria-hidden="true">
+          <img src="assets/logos/gk-fix.svg" alt="" aria-hidden="true">
+          <img src="assets/logos/the-way-media.svg" alt="" aria-hidden="true">
+          <img src="assets/logos/utv.svg" alt="" aria-hidden="true">
+        </div>
       </div>
     </section>
 
@@ -135,11 +142,11 @@
       <div class="section-head">
         <p class="eyebrow">Experience</p>
         <h2>Опыт работы</h2>
-        <p>Основной акцент — backend, API, очереди, production reliability, высокие нагрузки и техническое лидерство.</p>
+        <p>Достижения больше не вынесены в отдельный оторванный блок: они привязаны к конкретным местам работы.</p>
       </div>
 
       <div class="timeline">
-        <article class="job-card magnetic" data-company="MPSTATS">
+        <article class="job-card magnetic accent-green" data-company="MPSTATS" data-reveal>
           <div class="job-logo"><img src="assets/logos/mpstats.svg" alt="MPSTATS"></div>
           <div class="job-body">
             <div class="job-meta">
@@ -147,21 +154,27 @@
                 <h3>MPSTATS</h3>
                 <p>Senior Backend Developer / Tech Lead</p>
               </div>
-              <time>Февраль 2025 — Июнь 2026</time>
+              <time>Февраль 2025 — Июнь 2026 · 1 год 5 месяцев</time>
             </div>
-            <ul>
-              <li>Старший backend-разработчик модуля репрайсинга Wildberries и Ozon, управляющего ценами товаров на сумму более 2 млрд руб.</li>
-              <li>Техлид backend-направления модуля автоответов Wildberries.</li>
-              <li>Перевел критичную синхронную обработку repricing-модулей на асинхронную архитектуру на базе очередей.</li>
-              <li>Снизил количество обращений и багов на 70–80%, повысил стабильность расчетов и масштабируемость обработки.</li>
-              <li>Увеличил пиковую пропускную способность обработки задач с 500 до 30 000 jobs/sec.</li>
-              <li>Внедрил Prometheus-метрики и Grafana-дашборды по очередям, latency, throughput, ошибкам и критичным бизнес-сценариям.</li>
+            <p class="job-summary">Старший backend-разработчик модуля репрайсинга Wildberries и Ozon. Техлид backend-направления модуля автоответов Wildberries.</p>
+            <div class="achievement-grid">
+              <div class="achievement-chip"><strong>2 млрд ₽+</strong><span>товаров под управлением</span></div>
+              <div class="achievement-chip"><strong>30 000 jobs/sec</strong><span>пиковая пропускная способность</span></div>
+              <div class="achievement-chip"><strong>70–80%↓</strong><span>обращений и багов</span></div>
+              <div class="achievement-chip"><strong>90%↓</strong><span>обращений по автоответам</span></div>
+            </div>
+            <ul class="job-list">
+              <li>Спроектировал и возглавил переработку repricing-модулей Wildberries и Ozon: перевёл критичную синхронную обработку на асинхронную архитектуру на базе очередей.</li>
+              <li>Повысил стабильность расчётов и масштабируемость обработки высокой нагрузки.</li>
+              <li>Технически лидировал backend-направление модуля автоответов Wildberries: архитектурные решения, DTO, TDD, статический анализ, code review, декомпозиция задач и контроль качества релизов.</li>
+              <li>Внедрил метрики Prometheus и Grafana-дашборды по очередям, latency, throughput, ошибкам и критичным бизнес-сценариям.</li>
+              <li>Провёл рефакторинг критического backend-кода модуля автоответов Wildberries: переработал обработку очередей и повысил отказоустойчивость.</li>
             </ul>
             <div class="stack-line">PHP · Laravel · Symfony · RabbitMQ · Kafka · Redis · WebSocket · MySQL · ClickHouse · MongoDB · Prometheus · Grafana</div>
           </div>
         </article>
 
-        <article class="job-card magnetic" data-company="ГК Fix">
+        <article class="job-card magnetic" data-company="ГК Fix" data-reveal>
           <div class="job-logo"><img src="assets/logos/gk-fix.svg" alt="ГК Fix"></div>
           <div class="job-body">
             <div class="job-meta">
@@ -169,19 +182,20 @@
                 <h3>ГК Fix</h3>
                 <p>Middle PHP Developer</p>
               </div>
-              <time>Февраль 2024 — Февраль 2025</time>
+              <time>Февраль 2024 — Февраль 2025 · 1 год 1 месяц</time>
             </div>
-            <ul>
+            <p class="job-summary">Backend-разработка API, микросервисов, интеграций, очередей и админки на Laravel Nova.</p>
+            <ul class="job-list">
               <li>Разрабатывал backend и API для веб-приложений, мобильных приложений, Telegram-бота и админки на Laravel Nova.</li>
-              <li>Работал с микросервисами, очередями, архитектурой кода и интеграциями.</li>
-              <li>Разрабатывал backend и API для мотивационной программы AliExpress на PHP и Go.</li>
-              <li>Перевел тяжелые экспорты заказов в асинхронную обработку через очереди, что позволило выгружать миллионы записей за минуты.</li>
+              <li>Работал с микросервисами, активным использованием очередей, дизайном и архитектурой кода.</li>
+              <li>Разрабатывал backend и API для мотивационной программы AliExpress на PHP и Go: интеграции, бизнес-логика, асинхронная обработка, подготовка к высокой нагрузке.</li>
+              <li>Перевёл тяжёлые экспорты заказов в админке в асинхронную обработку через очереди, что позволило выгружать миллионы записей за минуты.</li>
             </ul>
             <div class="stack-line">PHP · Go · Vue.js · Laravel · RabbitMQ · Redis · MySQL · ClickHouse</div>
           </div>
         </article>
 
-        <article class="job-card magnetic" data-company="The Way Media">
+        <article class="job-card magnetic" data-company="The Way Media" data-reveal>
           <div class="job-logo"><img src="assets/logos/the-way-media.svg" alt="The Way Media"></div>
           <div class="job-body">
             <div class="job-meta">
@@ -189,17 +203,18 @@
                 <h3>The Way Media</h3>
                 <p>Middle PHP Developer</p>
               </div>
-              <time>Апрель 2023 — Февраль 2024</time>
+              <time>Апрель 2023 — Февраль 2024 · 11 месяцев</time>
             </div>
-            <ul>
-              <li>Ведущий backend-разработчик международного стартапа на этапе запуска продукта на рынке Мексики.</li>
-              <li>Реализовал API-интеграции, backend-логику и оптимизировал обработку маркетинговых коммуникаций.</li>
-              <li>Оптимизировал SQL-запросы и структуру обработки рассылок, увеличив скорость отправки SMS/email-кампаний на 40%.</li>
+            <p class="job-summary">Международный стартап, запуск продукта на рынке Мексики. Ключевая backend-роль на этапе запуска.</p>
+            <ul class="job-list">
+              <li>Участвовал в запуске продукта на мексиканском рынке как основной backend-разработчик.</li>
+              <li>Реализовал API-интеграции, подготовил backend-логику и оптимизировал обработку маркетинговых коммуникаций.</li>
+              <li>Оптимизировал SQL-запросы и структуру обработки маркетинговых рассылок, увеличив скорость отправки SMS/email-кампаний на 40%.</li>
             </ul>
           </div>
         </article>
 
-        <article class="job-card magnetic" data-company="UTV Holding">
+        <article class="job-card magnetic" data-company="UTV Holding" data-reveal>
           <div class="job-logo"><img src="assets/logos/utv.svg" alt="UTV Holding"></div>
           <div class="job-body">
             <div class="job-meta">
@@ -207,12 +222,13 @@
                 <h3>UTV Holding</h3>
                 <p>Middle PHP Developer</p>
               </div>
-              <time>Февраль 2021 — Октябрь 2022</time>
+              <time>Февраль 2021 — Октябрь 2022 · 1 год 9 месяцев</time>
             </div>
-            <ul>
-              <li>Разрабатывал и поддерживал backend медиапроектов muz-tv.ru, sun-tv.ru и muztube.ru.</li>
-              <li>Отвечал за API, административные панели, интеграции, медиаконтент и поддержку production-сервисов.</li>
-              <li>Был основным backend-разработчиком проекта Sun-TV: поддерживал архитектуру, реализовывал новые разделы и исправлял production-инциденты.</li>
+            <p class="job-summary">Backend развлекательных медиапроектов muz-tv.ru, sun-tv.ru и muztube.ru.</p>
+            <ul class="job-list">
+              <li>Разрабатывал и поддерживал backend развлекательных медиапроектов.</li>
+              <li>Отвечал за API, административные панели, интеграции, работу с медиаконтентом и поддержку production-сервисов.</li>
+              <li>Был основным backend-разработчиком проекта Sun-TV: поддерживал архитектуру, реализовывал новые разделы, исправлял production-инциденты и оптимизировал административные процессы.</li>
             </ul>
           </div>
         </article>
@@ -225,54 +241,24 @@
         <h2>Технический стек</h2>
       </div>
       <div class="stack-grid">
-        <article class="stack-group">
-          <h3>Backend</h3>
-          <div class="tags"><span>PHP</span><span>Laravel</span><span>Symfony</span><span>Go</span><span>REST API</span><span>WebSocket</span></div>
-        </article>
-        <article class="stack-group">
-          <h3>Data</h3>
-          <div class="tags"><span>MySQL</span><span>PostgreSQL</span><span>ClickHouse</span><span>MongoDB</span><span>Elasticsearch</span><span>SQL optimization</span></div>
-        </article>
-        <article class="stack-group">
-          <h3>Messaging / Cache</h3>
-          <div class="tags"><span>RabbitMQ</span><span>Kafka</span><span>Redis</span><span>Queues</span><span>Async processing</span></div>
-        </article>
-        <article class="stack-group">
-          <h3>Infra / Quality</h3>
-          <div class="tags"><span>Docker</span><span>Kubernetes</span><span>Linux</span><span>CI/CD</span><span>PHPUnit</span><span>Prometheus</span><span>Grafana</span></div>
-        </article>
-        <article class="stack-group">
-          <h3>Architecture</h3>
-          <div class="tags"><span>DDD</span><span>SOLID</span><span>Clean Code</span><span>DTO</span><span>TDD</span><span>Static analysis</span></div>
-        </article>
-        <article class="stack-group">
-          <h3>Leadership</h3>
-          <div class="tags"><span>Teamleading</span><span>Code Review</span><span>Decomposition</span><span>Release quality</span><span>Mentoring</span></div>
-        </article>
+        <article class="stack-group magnetic"><h3>Backend</h3><div class="tags"><span>PHP</span><span>Laravel</span><span>Symfony</span><span>Go</span><span>REST API</span><span>WebSocket</span></div></article>
+        <article class="stack-group magnetic"><h3>Data</h3><div class="tags"><span>MySQL</span><span>PostgreSQL</span><span>ClickHouse</span><span>MongoDB</span><span>Elasticsearch</span><span>SQL optimization</span></div></article>
+        <article class="stack-group magnetic"><h3>Messaging / Cache</h3><div class="tags"><span>RabbitMQ</span><span>Kafka</span><span>Redis</span><span>Queues</span><span>Async processing</span></div></article>
+        <article class="stack-group magnetic"><h3>Infra / Quality</h3><div class="tags"><span>Docker</span><span>Kubernetes</span><span>Linux</span><span>CI/CD</span><span>PHPUnit</span><span>Prometheus</span><span>Grafana</span></div></article>
+        <article class="stack-group magnetic"><h3>Architecture</h3><div class="tags"><span>DDD</span><span>SOLID</span><span>Clean Code</span><span>DTO</span><span>TDD</span><span>Static analysis</span></div></article>
+        <article class="stack-group magnetic"><h3>Leadership</h3><div class="tags"><span>Teamleading</span><span>Code Review</span><span>Decomposition</span><span>Release quality</span><span>Mentoring</span></div></article>
       </div>
     </section>
 
     <section class="section-surface cases" data-reveal>
       <div class="section-head">
         <p class="eyebrow">Selected cases</p>
-        <h2>Что можно быстро понять по опыту</h2>
+        <h2>Что считывается за 20 секунд</h2>
       </div>
       <div class="case-grid">
-        <article class="case-card magnetic">
-          <span>01</span>
-          <h3>Миграция sync → async</h3>
-          <p>Перевод критичной обработки repricing в очередь, горизонтальное масштабирование воркеров и контроль throughput.</p>
-        </article>
-        <article class="case-card magnetic">
-          <span>02</span>
-          <h3>Наблюдаемость</h3>
-          <p>Метрики, Grafana-дашборды, контроль latency, throughput, ошибок и критичных бизнес-сценариев.</p>
-        </article>
-        <article class="case-card magnetic">
-          <span>03</span>
-          <h3>Техническое лидерство</h3>
-          <p>Архитектурные решения, code review, стандарты кода, декомпозиция задач и контроль качества релизов.</p>
-        </article>
+        <article class="case-card magnetic"><span>01</span><h3>Async migration</h3><p>Перевод критичной обработки repricing в очередь, горизонтальное масштабирование воркеров и контроль throughput.</p></article>
+        <article class="case-card magnetic"><span>02</span><h3>Observability</h3><p>Prometheus, Grafana, latency, throughput, ошибки, очереди и критичные бизнес-сценарии.</p></article>
+        <article class="case-card magnetic"><span>03</span><h3>Tech leadership</h3><p>Архитектура, code review, стандарты кода, декомпозиция задач и контроль качества релизов.</p></article>
       </div>
     </section>
 
@@ -280,7 +266,7 @@
       <div>
         <p class="eyebrow">ATS / AI screening</p>
         <h2>Отдельная версия для автоматического парсинга</h2>
-        <p>Этот лендинг сделан для людей. Для ATS и AI-фильтров добавлена линейная версия без декоративной сетки, сложных колонок и анимаций.</p>
+        <p>Лендинг сделан для людей. Для ATS и AI-фильтров добавлена линейная версия без декоративной сетки, сложных колонок и анимаций.</p>
       </div>
       <div class="ats-actions">
         <a class="btn btn-primary" href="resume.html">Открыть ATS HTML</a>
@@ -306,11 +292,11 @@
 
   <footer class="footer">
     <span>© <span id="year"></span> Богдан Топоров</span>
-    <span>Built as static HTML/CSS/JS for GitHub Pages</span>
+    <span>Static HTML/CSS/JS for GitHub Pages</span>
   </footer>
 
   <noscript>
-    <style>[data-reveal]{opacity:1;transform:none}.counter{visibility:visible}</style>
+    <style>[data-reveal]{opacity:1;transform:none}.counter{visibility:visible}.marquee-track{animation:none}</style>
   </noscript>
 </body>
 </html>

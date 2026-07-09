@@ -1,8 +1,9 @@
-<svg width="220" height="72" viewBox="0 0 220 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">ГК Fix wordmark</title><desc id="desc">Text-based company wordmark for resume page.</desc>
-  <rect width="220" height="72" rx="18" fill="#101827"/>
-  <circle cx="36" cy="36" r="18" fill="#7DD3FC" fill-opacity=".18" stroke="#7DD3FC"/>
-  <path d="M28 44V28h14v4H32v12h-4Zm24 0V28h4.8v16H52Zm16.1 0 6.5-8.4L68.5 28H74l3.5 4.7L81 28h5.4l-6.1 7.8 6.6 8.2h-5.7L77.3 39l-3.7 5h-5.5Z" fill="#E6F6FF"/>
-  <path d="M106 44V28h17v4h-12.2v2.1h11v3.8h-11V44H106Zm24.4 0V28h4.8v16h-4.8Zm13.6 0V28h4.8v6.1l5.8-6.1h5.8l-6.1 6.3 6.4 9.7H155l-4.1-6.2-2.1 2.1V44H144Z" fill="#A78BFA"/>
-  <text x="176" y="42" fill="#9AA8BD" font-family="Arial, sans-serif" font-size="14" font-weight="700">GROUP</text>
+<svg width="260" height="76" viewBox="0 0 260 76" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ГК FIX">
+  <rect width="260" height="76" rx="20" fill="#0D1117"/>
+  <g transform="translate(24 18)">
+    <rect x="0" y="0" width="44" height="40" rx="12" fill="#FFFFFF"/>
+    <path d="M12 29V10h21v6H19v4h11v6H19v3h-7Z" fill="#0D1117"/>
+  </g>
+  <text x="83" y="46" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="-.5" fill="#FFFFFF">FIX</text>
+  <text x="151" y="47" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" fill="#A7B2C6">group</text>
 </svg>

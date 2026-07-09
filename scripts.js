@@ -1,5 +1,6 @@
 (() => {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isFinePointer = window.matchMedia('(pointer:fine)').matches;
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
   document.documentElement.classList.add('js-ready');
@@ -28,10 +29,10 @@
           revealObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.14, rootMargin: '0px 0px -60px 0px' });
+    }, { threshold: 0.12, rootMargin: '0px 0px -70px 0px' });
 
     revealItems.forEach((item, index) => {
-      item.style.transitionDelay = `${Math.min(index * 45, 260)}ms`;
+      item.style.transitionDelay = `${Math.min(index * 35, 240)}ms`;
       revealObserver.observe(item);
     });
   }
@@ -65,7 +66,7 @@
           counterObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.48 });
     counters.forEach((counter) => counterObserver.observe(counter));
   } else {
     counters.forEach(animateCounter);
@@ -77,7 +78,7 @@
     .filter(Boolean);
 
   const setActiveLink = () => {
-    let current = null;
+    let current = sections[0] || null;
     for (const section of sections) {
       if (section.getBoundingClientRect().top <= 170) current = section;
     }
@@ -87,6 +88,10 @@
   };
   setActiveLink();
   window.addEventListener('scroll', setActiveLink, { passive: true });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => link.blur());
+  });
 
   const copyButton = document.querySelector('.copy-email');
   if (copyButton) {
@@ -108,7 +113,7 @@
   }
 
   const glow = document.querySelector('.cursor-glow');
-  if (glow && !prefersReducedMotion && window.matchMedia('(pointer:fine)').matches) {
+  if (glow && !prefersReducedMotion && isFinePointer) {
     let visible = false;
     window.addEventListener('pointermove', (event) => {
       if (!visible) {
@@ -126,12 +131,12 @@
   }
 
   const magneticCards = Array.from(document.querySelectorAll('.magnetic'));
-  if (!prefersReducedMotion && window.matchMedia('(pointer:fine)').matches) {
+  if (!prefersReducedMotion && isFinePointer) {
     magneticCards.forEach((card) => {
       card.addEventListener('mousemove', (event) => {
         const rect = card.getBoundingClientRect();
-        const x = ((event.clientX - rect.left) / rect.width - 0.5) * 10;
-        const y = ((event.clientY - rect.top) / rect.height - 0.5) * -10;
+        const x = ((event.clientX - rect.left) / rect.width - 0.5) * 9;
+        const y = ((event.clientY - rect.top) / rect.height - 0.5) * -9;
         card.style.transform = `perspective(900px) rotateX(${y}deg) rotateY(${x}deg) translateY(-2px)`;
       });
 
