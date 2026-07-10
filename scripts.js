@@ -78,7 +78,7 @@
     .filter(Boolean);
 
   const setActiveLink = () => {
-    let current = sections[0] || null;
+    let current = null;
     for (const section of sections) {
       if (section.getBoundingClientRect().top <= 170) current = section;
     }

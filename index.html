@@ -125,11 +125,11 @@
       </span>
     </a>
     <nav class="nav" aria-label="Основная навигация">
-      <a href="#profile">Профиль</a>
       <a href="#experience">Опыт</a>
       <a href="#stack">Стек</a>
+      <a href="#profile">Обо мне</a>
       <a href="#ats">ATS</a>
-      <a href="#contacts">Контакты</a>
+      <a href="#contacts">Связь</a>
     </nav>
   </header>
 
@@ -151,7 +151,7 @@
           <a class="btn btn-primary" href="assets/docs/toporov-bogdan-cv.pdf" download>Скачать PDF</a>
           <a class="btn" href="resume.html">ATS-safe версия</a>
           <a class="btn" href="https://t.me/iambogdan" target="_blank" rel="noopener">Telegram</a>
-          <a class="btn ghost" href="https://github.com/obgov" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://github.com/obgov" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
@@ -167,34 +167,34 @@
       </aside>
     </section>
 
-    <section id="profile" class="section-surface profile-section" data-reveal>
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Обо мне</p>
-          <h2>Senior PHP Backend Developer / Tech Lead с 5 годами коммерческого опыта.</h2>
+    <section class="section-surface key-experience" data-reveal>
+      <div class="key-copy">
+        <p class="eyebrow">Ключевой опыт</p>
+        <h2>MPSTATS: репрайсинг Wildberries/Ozon и автоответы.</h2>
+        <p>Последняя роль сразу показывает релевантность для Senior / Lead Backend позиции: highload, очереди, БД, production reliability и техническое лидерство.</p>
+        <div class="key-actions">
+          <a class="btn btn-primary" href="#experience">Смотреть опыт</a>
+          <a class="btn" href="#contacts">Связаться</a>
         </div>
-        <p>Backend-разработка, highload-сервисы, API-heavy продукты, очереди, базы данных и техническое лидерство.</p>
       </div>
-      <div class="profile-text">
-        <p>Работал с Laravel, Symfony, Go, RabbitMQ, Kafka, Redis, MySQL, ClickHouse и MongoDB.</p>
-        <p>Основной фокус - архитектура backend-систем, асинхронная обработка, оптимизация БД, надежность production-сервисов и техническое лидерство.</p>
-        <p>Имею опыт переписывания критичных модулей, улучшения качества и архитектуры кода, работы с продуктами с крупным финансовым оборотом.</p>
-        <p>Владею принципами и паттернами программирования, включая SOLID, DRY, Clean Code, и следую стандартам PSR.</p>
-      </div>
-    </section>
 
-    <section class="logo-strip" aria-label="Компании" data-reveal>
-      <div class="section-head compact">
-        <div>
-          <p class="eyebrow">Компании</p>
-          <h2>Опыт в IT, e-commerce, международном стартапе и медиапроектах.</h2>
+      <div class="quick-metrics" aria-label="Ключевые результаты MPSTATS">
+        <div class="quick-metric">
+          <strong>2 млрд руб.+</strong>
+          <span>товаров под управлением</span>
         </div>
-      </div>
-      <div class="company-logos" aria-label="Логотипы компаний">
-        <img src="assets/logos/mpstats.svg" alt="MPSTATS">
-        <img src="assets/logos/gk-fix.svg" alt="ГК Fix">
-        <img src="assets/logos/the-way-media.svg" alt="The Way Media">
-        <img src="assets/logos/utv.svg" alt="UTV Holding">
+        <div class="quick-metric">
+          <strong>30 000 jobs/sec</strong>
+          <span>пиковая пропускная способность</span>
+        </div>
+        <div class="quick-metric">
+          <strong>-70-80%</strong>
+          <span>обращений и багов после переработки repricing</span>
+        </div>
+        <div class="quick-metric">
+          <strong>-90%</strong>
+          <span>обращений в поддержку после рефакторинга автоответов</span>
+        </div>
       </div>
     </section>
 
@@ -202,7 +202,7 @@
       <div class="section-head" data-reveal>
         <div>
           <p class="eyebrow">Опыт работы</p>
-          <h2>Опыт работы</h2>
+          <h2>Последние роли, зоны ответственности и измеримые результаты.</h2>
         </div>
         <p>MPSTATS, ГК Fix, The Way Media и UTV Holding: продукты с высокой нагрузкой, интеграциями, очередями и production-сервисами.</p>
       </div>
@@ -225,19 +225,19 @@
 
             <div class="metric-grid" aria-label="Ключевые результаты MPSTATS">
               <div class="metric-card">
-                <strong><span class="counter" data-target="2">0</span> млрд руб.+</strong>
+                <strong><span class="counter" data-target="2">2</span> млрд руб.+</strong>
                 <span>товаров под управлением</span>
               </div>
               <div class="metric-card">
-                <strong><span class="counter" data-target="30000">0</span> jobs/sec</strong>
+                <strong><span class="counter" data-target="30000">30 000</span> jobs/sec</strong>
                 <span>пиковая пропускная способность</span>
               </div>
               <div class="metric-card">
-                <strong><span class="counter" data-target="80">0</span>%</strong>
+                <strong>70-80%</strong>
                 <span>меньше обращений и багов</span>
               </div>
               <div class="metric-card">
-                <strong><span class="counter" data-target="90">0</span>%</strong>
+                <strong><span class="counter" data-target="90">90</span>%</strong>
                 <span>меньше обращений в поддержку</span>
               </div>
             </div>
@@ -337,34 +337,39 @@
         <p>PHP, Laravel, Symfony, Go, SQL/NoSQL, очереди, контейнеризация, CI/CD и командная разработка.</p>
       </div>
 
-      <div class="skill-grid" aria-label="Навыки">
-        <span>PHP</span>
-        <span>SQL</span>
-        <span>Laravel</span>
-        <span>Symfony</span>
-        <span>Linux</span>
-        <span>API</span>
-        <span>REST API</span>
-        <span>NoSQL</span>
-        <span>MySQL</span>
-        <span>PostgreSQL</span>
-        <span>ClickHouse</span>
-        <span>MongoDB</span>
-        <span>Redis</span>
-        <span>RabbitMQ</span>
-        <span>Apache Kafka</span>
-        <span>Docker</span>
-        <span>Kubernetes</span>
-        <span>Nginx</span>
-        <span>Elasticsearch</span>
-        <span>PHPUnit</span>
-        <span>SOLID</span>
-        <span>CI/CD</span>
-        <span>MVC</span>
-        <span>DDD</span>
-        <span>Git</span>
-        <span>Teamleading</span>
-        <span>Управление командой</span>
+      <div class="skill-groups" aria-label="Навыки">
+        <article class="skill-group">
+          <h3>Backend</h3>
+          <p>PHP, Laravel, Symfony, Go, REST API, API-heavy продукты, ООП.</p>
+        </article>
+        <article class="skill-group">
+          <h3>Данные</h3>
+          <p>SQL, MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, Elasticsearch, NoSQL.</p>
+        </article>
+        <article class="skill-group">
+          <h3>Очереди и infra</h3>
+          <p>RabbitMQ, Apache Kafka, Docker, Kubernetes, Linux, Nginx, CI/CD.</p>
+        </article>
+        <article class="skill-group">
+          <h3>Практики и lead</h3>
+          <p>DDD, SOLID, MVC, PHPUnit, Clean Code, code review, Teamleading, управление командой.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="profile" class="section-surface profile-section" data-reveal>
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Обо мне</p>
+          <h2>Backend lead для highload/API-heavy продуктов.</h2>
+        </div>
+        <p>Основной фокус - архитектура backend-систем, асинхронная обработка, оптимизация БД, надежность production-сервисов и техническое лидерство.</p>
+      </div>
+      <div class="profile-text">
+        <p>Работал с Laravel, Symfony, Go, RabbitMQ, Kafka, Redis, MySQL, ClickHouse и MongoDB.</p>
+        <p>Имею опыт переписывания критичных модулей, улучшения качества и архитектуры кода, работы с продуктами с крупным финансовым оборотом.</p>
+        <p>Владею принципами и паттернами программирования, включая SOLID, DRY, Clean Code, и следую стандартам PSR.</p>
+        <p>Предпочтительный формат - удаленная работа. Всегда доступен в Telegram: @iambogdan.</p>
       </div>
     </section>
 
