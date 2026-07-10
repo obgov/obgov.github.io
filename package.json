@@ -1,0 +1,21 @@
+{
+  "name": "obgov.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Статический сайт-резюме для GitHub Pages с минимальной production-сборкой ассетов.",
+  "scripts": {
+    "build:css": "lightningcss styles.css -o styles.min.css --minify",
+    "build:js": "esbuild scripts.js --minify --outfile=scripts.min.js",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obgov/obgov.github.io.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/obgov/obgov.github.io#readme",
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "lightningcss-cli": "^1.32.0"
+  }
+}

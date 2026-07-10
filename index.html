@@ -11,6 +11,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="format-detection" content="telephone=yes">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="application-name" content="Богдан Топоров - Resume">
   <meta name="apple-mobile-web-app-title" content="Богдан Топоров">
   <meta name="geo.region" content="RU-SPE">
@@ -45,9 +46,9 @@
   <meta name="twitter:image:alt" content="Фото Богдана Топорова">
   <title>Богдан Топоров - Senior Backend PHP Developer / Tech Lead</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="assets/profile-square.webp" type="image/webp">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="scripts.js"></script>
+  <link rel="preload" as="image" href="assets/profile-square.webp" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.min.css">
+  <script defer src="scripts.min.js" fetchpriority="low"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -157,7 +158,7 @@
 
       <aside class="profile-panel" aria-label="Профиль кандидата">
         <div class="photo-frame">
-          <img src="assets/profile-square.webp" alt="Фото Богдана Топорова" width="800" height="800">
+          <img src="assets/profile-square.webp" alt="Фото Богдана Топорова" width="800" height="800" loading="eager" decoding="async" fetchpriority="high">
         </div>
         <div class="profile-copy">
           <span class="profile-kicker">Опыт работы</span>
@@ -208,7 +209,7 @@
 
       <div class="timeline">
         <article class="job-card featured" data-reveal data-company="MPSTATS">
-          <div class="job-logo"><img src="assets/logos/mpstats.svg" alt="MPSTATS"></div>
+          <div class="job-logo"><img src="assets/logos/mpstats.svg" alt="MPSTATS" loading="lazy" decoding="async"></div>
           <div class="job-body">
             <div class="job-meta">
               <div>
@@ -256,7 +257,7 @@
         </article>
 
         <article class="job-card" data-reveal data-company="ГК Fix">
-          <div class="job-logo"><img src="assets/logos/gk-fix.svg" alt="ГК Fix"></div>
+          <div class="job-logo"><img src="assets/logos/gk-fix.svg" alt="ГК Fix" loading="lazy" decoding="async"></div>
           <div class="job-body">
             <div class="job-meta">
               <div>
@@ -281,7 +282,7 @@
         </article>
 
         <article class="job-card" data-reveal data-company="The Way Media">
-          <div class="job-logo"><img src="assets/logos/the-way-media.svg" alt="The Way Media"></div>
+          <div class="job-logo"><img src="assets/logos/the-way-media.svg" alt="The Way Media" loading="lazy" decoding="async"></div>
           <div class="job-body">
             <div class="job-meta">
               <div>
@@ -304,7 +305,7 @@
         </article>
 
         <article class="job-card" data-reveal data-company="UTV Holding">
-          <div class="job-logo"><img src="assets/logos/utv.svg" alt="UTV Holding"></div>
+          <div class="job-logo"><img src="assets/logos/utv.svg" alt="UTV Holding" loading="lazy" decoding="async"></div>
           <div class="job-body">
             <div class="job-meta">
               <div>
@@ -410,9 +411,8 @@
         <p>Предпочитаемый способ связи - Telegram.</p>
       </div>
       <div class="contact-links">
-        <a href="https://t.me/iambogdan" target="_blank" rel="noopener">telegram: @iambogdan</a>
+        <a href="https://t.me/iambogdan" target="_blank" rel="noopener">tg: @iambogdan</a>
         <a href="mailto:toporovbo@gmail.com">toporovbo@gmail.com</a>
-        <a href="tel:+79215886202">+7 (921) 588-62-02</a>
         <button class="copy-email" type="button" data-copy="toporovbo@gmail.com">Скопировать email</button>
       </div>
     </section>
