@@ -1,5 +1,5 @@
 (() => {
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const prefersReducedMotion = false;
   const isFinePointer = window.matchMedia('(pointer:fine)').matches;
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
@@ -45,7 +45,7 @@
     node.dataset.done = 'true';
 
     const target = Number(node.dataset.target || '0');
-    const duration = prefersReducedMotion ? 0 : 800;
+  const duration = prefersReducedMotion ? 0 : 2000;
     const startedAt = performance.now();
 
     const tick = (now) => {
