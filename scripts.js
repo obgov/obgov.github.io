@@ -45,14 +45,21 @@
     node.dataset.done = 'true';
 
     const target = Number(node.dataset.target || '0');
-    const duration = prefersReducedMotion ? 0 : 1100;
+    const duration = prefersReducedMotion ? 0 : 800;
     const startedAt = performance.now();
 
     const tick = (now) => {
       const progress = duration === 0 ? 1 : clamp((now - startedAt) / duration, 0, 1);
       const eased = 1 - Math.pow(1 - progress, 4);
+
       node.textContent = formatCounter(target * eased);
-      if (progress < 1) requestAnimationFrame(tick);
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+        return;
+      }
+
+      node.textContent = formatCounter(target);
     };
 
     requestAnimationFrame(tick);

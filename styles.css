@@ -484,6 +484,11 @@ p {
   font-size: 17px;
 }
 
+.last-period {
+  color: var(--accent) !important;
+  font-weight: 800;
+}
+
 .key-actions {
   display: flex;
   flex-wrap: wrap;
@@ -491,63 +496,91 @@ p {
   margin-top: 24px;
 }
 
-.quick-metrics {
+.last-role-panel {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
+  align-content: center;
 }
 
-.quick-metric {
-  min-height: 142px;
-  padding: 18px;
-  border: 1px solid rgba(255, 184, 77, .22);
-  border-radius: var(--radius);
-  background:
-    linear-gradient(135deg, rgba(255,184,77,.10), rgba(125,211,252,.06)),
-    rgba(255,255,255,.045);
-}
-
-.quick-metric strong {
-  display: block;
-  color: var(--accent);
-  font-size: clamp(28px, 3.6vw, 46px);
-  line-height: .96;
-}
-
-.quick-metric span {
-  display: block;
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.3;
-}
-
-.profile-text {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.profile-text p {
-  min-height: 160px;
+.role-row {
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: rgba(255,255,255,.06);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.06), rgba(125,211,252,.045)),
+    rgba(255,255,255,.045);
+}
+
+.role-row-lead {
+  border-color: rgba(255, 184, 77, .34);
+  background:
+    linear-gradient(135deg, rgba(255,184,77,.13), rgba(125,211,252,.06)),
+    rgba(255,255,255,.05);
+}
+
+.role-row span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.role-row strong {
+  display: block;
+  color: var(--ink);
+  font-size: clamp(18px, 2vw, 25px);
+  line-height: 1.16;
+}
+
+.role-row p {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.profile-focus {
+  display: grid;
+  gap: 10px;
+}
+
+.profile-focus article {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.05);
+}
+
+.profile-focus article span {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  color: var(--accent);
+  border: 1px solid rgba(255, 184, 77, .28);
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.profile-focus h3 {
+  margin-bottom: 7px;
+  color: var(--ink);
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.profile-focus p {
+  max-width: 920px;
   color: var(--ink-soft);
-}
-
-.profile-text p:nth-child(2) {
-  color: #0b0b10;
-  background: linear-gradient(160deg, var(--accent), var(--accent-2));
-}
-
-.profile-text p:nth-child(3) {
-  background: rgba(125, 211, 252, .09);
-}
-
-.profile-text p:nth-child(4) {
-  background: rgba(215, 166, 64, .11);
 }
 
 .logo-strip {
@@ -706,13 +739,41 @@ p {
 }
 
 .metric-card strong {
-  display: block;
-  color: var(--accent);
-  font-size: clamp(22px, 2.5vw, 34px);
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 7px;
   line-height: 1;
 }
 
-.metric-card span {
+.metric-card .metric-number {
+  display: inline-block;
+  color: var(--accent);
+  font-size: clamp(32px, 3.2vw, 52px);
+  font-weight: 900;
+  line-height: .88;
+  letter-spacing: 0;
+}
+
+.metric-card .metric-unit {
+  display: inline-block;
+  color: var(--accent);
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 850;
+  line-height: 1;
+}
+
+.metric-card:first-child .metric-number {
+  font-size: clamp(58px, 6.8vw, 98px);
+}
+
+.metric-card:first-child .metric-unit {
+  max-width: 112px;
+  font-size: clamp(20px, 2.2vw, 30px);
+  line-height: .95;
+}
+
+.metric-card > span {
   display: block;
   margin-top: 10px;
   color: var(--muted);
@@ -859,10 +920,6 @@ p {
     justify-self: stretch;
   }
 
-  .profile-text {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .metric-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -897,10 +954,6 @@ p {
   }
 
   .company-logos {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .quick-metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -978,20 +1031,13 @@ p {
     font-size: 13px;
   }
 
-  .profile-text,
-  .quick-metrics,
   .metric-grid,
   .company-logos,
   .skill-groups {
     grid-template-columns: 1fr;
   }
 
-  .quick-metric,
   .skill-group {
-    min-height: auto;
-  }
-
-  .profile-text p {
     min-height: auto;
   }
 
@@ -1001,6 +1047,11 @@ p {
 
   .metric-card {
     min-height: auto;
+  }
+
+  .profile-focus article {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .footer {
