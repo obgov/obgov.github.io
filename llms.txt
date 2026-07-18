@@ -1,18 +1,24 @@
 # Богдан Топоров
 
-Senior Backend PHP Developer / Tech Lead из Санкт-Петербурга.
+> Senior Backend PHP Developer / Tech Lead из Санкт-Петербурга с 5 годами коммерческого опыта в backend-разработке, highload-сервисах и API-heavy продуктах.
 
-Основной профиль: 5 лет коммерческого опыта в backend-разработке, highload-сервисах и API-heavy продуктах. Работал с Laravel, Symfony, Go, RabbitMQ, Kafka, Redis, MySQL, ClickHouse и MongoDB.
+Профиль: архитектура backend-систем, асинхронная обработка, оптимизация баз данных, надёжность production-сервисов и техническое лидерство. Основной стек: PHP, SQL, Laravel, Symfony, Go, RabbitMQ, Kafka, Redis, MySQL, ClickHouse и MongoDB.
 
-Фокус: архитектура backend-систем, асинхронная обработка, оптимизация БД, надежность production-сервисов и техническое лидерство.
+## Резюме
 
-Ключевые ссылки:
+- [Веб-сайт](https://obgov.github.io/): Основная страница с профилем и опытом.
+- [ATS-совместимое резюме](https://obgov.github.io/resume.html): Резюме в HTML для систем подбора персонала.
+- [Текстовое резюме](https://obgov.github.io/resume.txt): Полная версия резюме в простом тексте.
+- [PDF-резюме](https://obgov.github.io/assets/docs/toporov-bogdan-cv.pdf): Версия резюме для скачивания и печати.
 
-- Website: https://obgov.github.io/
-- ATS HTML: https://obgov.github.io/resume.html
-- Plain text resume: https://obgov.github.io/resume.txt
-- PDF resume: https://obgov.github.io/assets/docs/toporov-bogdan-cv.pdf
-- Telegram: https://t.me/iambogdan
-- GitHub: https://github.com/obgov
+## Контакты
 
-Ключевые навыки: PHP, SQL, Laravel, Symfony, Go, Linux, API, REST API, NoSQL, MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, RabbitMQ, Apache Kafka, Docker, Kubernetes, Nginx, Elasticsearch, PHPUnit, SOLID, CI/CD, MVC, DDD, Git, Teamleading.
+- [Telegram](https://t.me/iambogdan): Связаться с Богданом Топоровым.
+
+## Инструменты
+
+- [Resume Fire](https://t.me/ResumeFireBot?start=github): Telegram-бот для Human + ATS-разбора резюме с бесплатным превью анализа и примером полного отчёта.
+
+## Optional
+
+- [GitHub](https://github.com/obgov): Публичные репозитории и профиль разработчика.
