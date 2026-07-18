@@ -876,6 +876,28 @@ p {
   font-size: 13px;
 }
 
+.footer-project {
+  display: grid;
+  gap: 4px;
+  max-width: 440px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-project strong {
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.footer-project span {
+  line-height: 1.45;
+}
+
+.footer-project:hover strong {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 [data-reveal],
 [data-reveal].is-visible {
   opacity: 1;
@@ -981,6 +1003,14 @@ p {
   .site-shell,
   .footer {
     width: min(100% - 20px, var(--max));
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-project {
+    max-width: none;
   }
 
   .site-shell {
